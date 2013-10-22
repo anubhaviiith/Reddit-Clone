@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+{{ for i in range(0,len(record)):}}
+<a href="{{=record[i]['url']}}">{{=record[i]['heading']}}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://127.0.0.1:8000/201201105/default/viewcat/{{=record[i]['category']}}">{{=record[i]['category']}}</a></br>
+{{pass}}

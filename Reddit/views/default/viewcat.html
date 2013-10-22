@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+{{ for i in range(0,len(record)): }}
+<a href="{{=record[i]['url']}}">{{=record[i]['heading']}}</a></br>
+{{pass}}

@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+<table>
+{{for i in range(0,len(record)):}}
+<tr>
+<td>{{=record[i]['comment']['comm']}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>{{=record[i]['auth_user']['first_name']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>{{=record[i]['comment']['time']}}
+</td>
+</tr>
+{{pass}}
+</table>
